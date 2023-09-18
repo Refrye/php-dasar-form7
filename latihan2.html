@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tampilan form 2</title>
+</head>
+<body>
+    <form action="proses2.php" method="post">
+        <!-- tanpa require -->
+        <!-- <input type="text" name="nama" placeholder="Nama">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password"> -->
+        <!-- dengan require -->
+        <input type="text" name="nama" required>
+        <input type="email" name="email" required>
+        <input type="password" name="password" required>
+
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="checkbox" name="terms" value="1"> I agree to the terms and conditions
+        <select name="country">
+            <option value="indonesia">Indonesia</option>
+            <option value="singapore">Singapore</option>
+            <option value="malaysia">Malaysia</option>
+            <option value="thailand">Thailand</option>
+        </select>
+        <textarea name="message" rows="5" cols="50">Message</textarea>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
